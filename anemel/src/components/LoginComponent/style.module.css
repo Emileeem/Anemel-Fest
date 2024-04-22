@@ -1,0 +1,19 @@
+.main{
+    background: rgb(133,46,255);
+    background: linear-gradient(90deg, rgba(133,46,255,1) 0%, rgba(63,34,103,1) 100%);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.nav {
+    background-color: rgba(116, 56, 200, 0.61); /* Cor com 50% de opacidade */
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo {
+    width: 20%;
+    height: 20%;
+}
