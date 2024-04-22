@@ -17,3 +17,52 @@
     width: 20%;
     height: 20%;
 }
+
+.body2 {
+    background: rgb(115,115,115);
+    background: linear-gradient(0deg, rgba(115,115,115,0.5) 0%, rgba(184,181,181,0.5) 100%);
+    font-family: "Julius Sans One", sans-serif;
+    color: white;
+    text-align: center;
+    padding: 1%;
+}
+
+.bemVindo {
+    font-size: 40px;
+}
+
+.bodyTextos {
+    font-size: 20px;
+    display: flex;
+    text-align: left;
+    margin: 10px;
+    align-items: center;
+
+}
+
+.cadastroButton {
+    height: 30%;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    width: 65%;
+    border-radius: 100px;
+}
+
+.loginCard {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+    font-family: "Julius Sans One", sans-serif;
+    color: white;
+    font-size: 13px;
+}
+
+.logo2 {
+    width: 40%;
+    height: 40%;
+}
