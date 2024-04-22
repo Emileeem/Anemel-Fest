@@ -1,10 +1,10 @@
 import styles from "./style.module.css"
 import Form from 'react-bootstrap/Form';
 
-export default function InputComponent() {
+export default function InputComponent({ labelText }) {
     return (
       <>
-        <Form.Control type="text" placeholder="Normal text" className={styles.input_type}/>
+        <Form.Control type="text" placeholder={labelText} className={styles.input_type}/>
       </>
     );
   }

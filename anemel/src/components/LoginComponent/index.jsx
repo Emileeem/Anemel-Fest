@@ -1,4 +1,5 @@
 import styles from "./style.module.css"
+import InputComponent from "../InputComponent"
 
 export function LoginComponent(){
     return ( 
@@ -20,7 +21,8 @@ export function LoginComponent(){
                 <div className={styles.loginCard}>
                     <img src="./logo.png" className={styles.logo2} />
                     <h1> ANEMEL FEST </h1>
-                    
+                    <InputComponent labelText="Email" />
+                    <InputComponent labelText="Senha" />
                 </div>
             </div>
         </main>
