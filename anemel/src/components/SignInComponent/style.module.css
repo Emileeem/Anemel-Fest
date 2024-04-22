@@ -1,0 +1,15 @@
+.body{
+    background: rgb(251,86,7);
+    background: linear-gradient(180deg, rgba(251,86,7,1) 0%, rgba(158,21,21,1) 100%);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.navbar{
+    background-color: rgba(255, 109, 41, 0.5);
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    height: 60px;
+}
