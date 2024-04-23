@@ -21,8 +21,8 @@ export function LoginComponent(){
                 <div className={styles.loginCard}>
                     <img src="./logo.png" className={styles.logo2} />
                     <h1> ANEMEL FEST </h1>
-                    <InputComponent labelText="Email" />
-                    <InputComponent labelText="Senha" />
+                    <InputComponent labelType = "text" labelText="Email" />
+                    <InputComponent labelType = "password" labelText="Senha" />
                 </div>
             </div>
         </main>
