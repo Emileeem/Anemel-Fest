@@ -27,7 +27,7 @@
     text-align: center;
     align-items: center;
     padding: 1%;
-    height: 20vh;
+
 }
 
 .card_title {
@@ -43,6 +43,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 5%;
+    margin-bottom: 8%;
 }
 
 .form {
@@ -62,7 +63,7 @@
 .container {
     display: flex;
     justify-content: center;
-    margin-top: 45px;
+    margin-top: 10vh;
 }
 
 .entrarButton {

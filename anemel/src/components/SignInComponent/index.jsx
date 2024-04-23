@@ -24,7 +24,7 @@ export function SignInComponent() {
                 <div className={styles.form}>
                     <Container>
                         <Row>
-                            <Col md={6}>
+                            <Col md={8}>
                                 <InputComponent labelType="text" labelText="Nome" />
                             </Col>
                             <Col md={6}>
@@ -61,7 +61,6 @@ export function SignInComponent() {
             <div className={styles.container}>
                 <button className={styles.entrarButton}> CRIAR </button>
             </div>
-                <IconsComponent />
             </main>
         </>
     );
