@@ -4,5 +4,7 @@
     border-radius: 50px;
     background-color: rgba(217, 217, 217, 0.8) ;
     align-items: center;
-    
+    padding: 5px;
+    margin: 2%;
+    font-family: "Julius Sans One", sans-serif;
 }

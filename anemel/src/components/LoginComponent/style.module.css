@@ -66,3 +66,29 @@
     width: 40%;
     height: 40%;
 }
+
+.checkbox {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: "Julius Sans One", sans-serif;
+    color: white;
+}
+
+.esquecer {
+    margin: 9%;
+    font-family: "Julius Sans One", sans-serif;
+    color: white;
+    font-style: inherit;
+}
+
+.entrarButton {
+    height: 30%;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    width: 45%;
+    border-radius: 100px;
+}
