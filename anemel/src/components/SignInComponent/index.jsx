@@ -1,9 +1,11 @@
 import styles from "./style.module.css"
 import InputComponent from "../InputComponent";
+import { IconsComponent } from "../IconsComponent";
 
 //bootstrap
 import Container from 'react-bootstrap/Container';
-import Stack from 'react-bootstrap/Stack';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 export function SignInComponent() {
     return (
@@ -21,40 +23,45 @@ export function SignInComponent() {
                 </div>
                 <div className={styles.form}>
                     <Container>
-                        <div className={styles.row}> {/* Adicionando margem vertical com a classe 'my-3' */}
-                            <Stack direction="horizontal" gap={2}>
-                                <InputComponent labelType = "text" labelText="Nome" ></InputComponent>
-                                <InputComponent labelType = "text" labelText="Sobrenome" ></InputComponent>
-                            </Stack>
-                        </div>
+                        <Row>
+                            <Col md={6}>
+                                <InputComponent labelType="text" labelText="Nome" />
+                            </Col>
+                            <Col md={6}>
+                                <InputComponent labelType="text" labelText="Sobrenome" />
+                            </Col>
+                        </Row>
 
-                        <div className={styles.row} > {/* Adicionando margem vertical com a classe 'my-3' */}
-                            <Stack direction="horizontal" gap={1}>
-                                <InputComponent width="200px" labelType = "text" labelText="Email" ></InputComponent>
-                            </Stack>
-                        </div>
+                        <Row>
+                            <Col md={6}>
+                                <InputComponent width="200px" labelType="text" labelText="Email" />
+                            </Col>
+                            <Col md={6}>
+                                <InputComponent labelType="date" labelText="Data Nascimento" />
+                            </Col>
+                        </Row>
 
-                        <div className={styles.row}> {/* Adicionando margem vertical com a classe 'my-3' */}
-                            <Stack direction="horizontal" gap={2}>
-                                <InputComponent labelType = "date" labelText="Data Nascimento" ></InputComponent>
-                                <InputComponent labelType = "text" labelText="CPF" ></InputComponent>
-                            </Stack>
-                        </div>
+                        <Row>
+                            <Col md={6}>
+                                <InputComponent labelType="text" labelText="CPF" />
+                            </Col>
+                            <Col md={6}>
+                                <InputComponent labelType="password" labelText="Senha" />
+                            </Col>
+                        </Row>
 
-                        <div className={styles.row}> {/* Adicionando margem vertical com a classe 'my-3' */}
-                            <Stack direction="horizontal" gap={1}>
-                                <InputComponent labelType = "password" labelText="Senha" ></InputComponent>
-                            </Stack>
-                        </div>
-
-                        <div className={styles.row}> {/* Adicionando margem vertical com a classe 'my-3' */}
-                            <Stack direction="horizontal" gap={3}>
-                                <InputComponent labelType = "password" labelText="Confirme Senha" ></InputComponent>
-                            </Stack>
-                        </div>
+                        <Row>
+                            <Col md={6}>
+                                <InputComponent labelType="password" labelText="Confirme Senha" />
+                            </Col>
+                        </Row>
                     </Container>
                 </div>
 
+            <div className={styles.container}>
+                <button className={styles.entrarButton}> CRIAR </button>
+            </div>
+                <IconsComponent />
             </main>
         </>
     );

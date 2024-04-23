@@ -1,6 +1,6 @@
 import styles from "./style.module.css"
 import InputComponent from "../InputComponent"
-
+import { IconsComponent } from "../IconsComponent"
 export function LoginComponent(){
     return ( 
         <>
@@ -23,6 +23,14 @@ export function LoginComponent(){
                     <h1> ANEMEL FEST </h1>
                     <InputComponent labelType = "text" labelText="Email" />
                     <InputComponent labelType = "password" labelText="Senha" />
+                    <div className={styles.checkbox}>
+                        <InputComponent labelType = "checkbox"/>
+                        Lembrar
+                       <a className={styles.esquecer}> Esqueceu sua senha? </a> 
+                    </div>
+                    <button className={styles.entrarButton}> Entrar </button>
+                    <IconsComponent />
+        
                 </div>
             </div>
         </main>
