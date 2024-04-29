@@ -11,6 +11,19 @@ const messages = {
           pass: "Esqueceu sua senha?",
           button: "Entrar"
         },
+
+        cadastro: {
+          welcome: "BEM-VINDO(A)!",
+          account: "Crie sua conta",
+          nameInput: "Nome",
+          lastname: "Sobrenome",
+          email: "Email",
+          birthday: "Data de Nascimento",
+          cpf: "CPF",
+          password: "Senha",
+          confirmpass: "Confirme Sua Senha",
+          btn: "CRIAR"
+        }
       }
     }
 }

@@ -3,8 +3,9 @@ import styles from "./style.module.css";
 import InputComponent from "../InputComponent";
 import { IconsComponent } from "../IconsComponent";
 import { i18n } from "../../translate/i18n";
-import brasilFlag from "./brasil.png";
-import euaFlag from "./eua.png";
+import brasilFlag from "../../assets/brasil.png";
+import euaFlag from "../../assets/eua.png";
+import { Link } from 'react-router-dom'
 
 export function LoginComponent() {
     const [currentLanguage, setCurrentLanguage] = useState("pt");
@@ -28,7 +29,7 @@ export function LoginComponent() {
                         <p className={styles.bemVindo}> {i18n.t("login.welcome", { lng: currentLanguage })} </p>
                         <div className={styles.bodyTextos}>
                             <p> {i18n.t("login.account", { lng: currentLanguage })} </p>
-                            <button className={styles.cadastroButton}> {i18n.t("login.buttonCad", { lng: currentLanguage })} </button>
+                            <Link to={"/Crie-Sua-Conta"} className={styles.cadastroButton}> {i18n.t("login.buttonCad", { lng: currentLanguage })} </Link>
                         </div>
                     </div>
                     <div className={styles.loginCard}>
